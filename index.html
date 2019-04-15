@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <div class="bg">
+      <h1 id="title" class="d-flex justify-content-center">Word Guess</h1>
+      <div class="whiteBox"></div>
+    </div>
+
+    <div class="container" style="padding-top: 50px">
+      <div class="card">
+        <h5 class="card-header">Word to Guess</h5>
+        <div class="card">
+          <div class="card-body">
+            <strong id="blanks"></strong>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <strong>Wrong Guesses: </strong> <span id="wrongGuesses"></span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <strong>Guesses Left: </strong> <span id="guessedLeft"></span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <strong>Wins: </strong> <span id="wins"></span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <strong>Losses: </strong> <span id="losses"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="footer">
+    <footer class="page-footer font-small blue fixed-bottom">
+
+            <div class="footer-copyright text-center text-muted py-3 foot">
+                © 2019 Copyright:
+            </div>
+ 
+    </footer>
+    <script src="./assets/javascript/game.js"></script>
+  </body>
+</html>
