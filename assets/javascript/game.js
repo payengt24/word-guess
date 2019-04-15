@@ -58,10 +58,13 @@ function checkLetter(letter) {
       }
     }
   } else {
-    console.log('wrongGuesses========', letter)
-    wrongGuesses.push(letter)
-    console.log('wrongGuesses++++', wrongGuesses)
-    guessedLeft--
+
+        if (wrongGuesses.indexOf(letter) > -1) {
+            
+        } else {
+            wrongGuesses.push(letter);
+            guessedLeft--;
+        }
   }
   console.log('blanks--', numChoosenWordLetter);
 
@@ -90,7 +93,11 @@ function roundCompleted() {
 
 document.onkeydown = function (event) {
   var letter = event.key.toLowerCase();
-  checkLetter(letter)
+      console.log(letter.length);
+    if (letter.length === 1 && /[a-z]/.exec(letter)) {
+        checkLetter(letter);
+    }
+
   roundCompleted()
   console.log(letter);
 }
