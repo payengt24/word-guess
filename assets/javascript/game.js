@@ -1,6 +1,6 @@
 console.log('here');
 
-var wordList = ['payeng', 'who', 'what', 'where', 'when'];
+var wordList = ['lily', 'rose', 'daisy', 'daffodil', 'jasmine'];
 
 var wrongGuesses = [];
 var guessedLeft = 9;
