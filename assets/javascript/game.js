@@ -1,6 +1,6 @@
 console.log('here');
 
-var wordList = ['lily', 'rose', 'daisy', 'daffodil', 'jasmine'];
+var wordList = ['lily', 'rose', 'daisy', 'daffodil', 'jasmine', 'lavender', 'orchid', 'violet'];
 
 var wrongGuesses = [];
 var guessedLeft = 9;
